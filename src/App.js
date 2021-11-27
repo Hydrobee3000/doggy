@@ -9,7 +9,7 @@ export const AppContainer = () => {
   return <App dogData={dogData} dogBreed={dogBreed} />
 }
 
-export const App = ({ dogData, dogBreed }) => {
+const App = ({ dogData, dogBreed }) => {
   return (
     <div className={styles.app}>
       <Header />
@@ -17,4 +17,4 @@ export const App = ({ dogData, dogBreed }) => {
   )
 }
 
-s
+export default App
