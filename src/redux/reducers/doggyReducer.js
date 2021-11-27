@@ -35,4 +35,8 @@ const doggyReducer = (state = initialState, action) => {
   }
 }
 
+const setDoggiesData = (doggiesData) => ({ type: SET_DOGGIES, payload: doggiesData })
+export const setBreed = (breed) => ({ type: SET_BREED, payload: breed })
+const setBreedImages = (breedImages) => ({ type: SET_BREED_IMAGES, payload: breedImages })
+
 export default doggyReducer
