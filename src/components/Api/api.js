@@ -2,7 +2,7 @@ import * as axios from 'axios'
 
 const instance = axios.create({
   baseURL: `https://dog.ceo/api/`,
-  headers: { Accept: 'application/json' },
+  // headers: { Accept: 'application/json' },
 })
 
 export const dogAPI = {

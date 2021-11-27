@@ -7,7 +7,7 @@ let Preloader = () => {
         position: 'absolute',
         left: '50%',
         top: '20%',
-        marginLeft: '-1.95em',
+        marginLeft: '-5.5em',
         width: '100px',
         height: '100px',
         zIndex: 999,

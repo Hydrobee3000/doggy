@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { useEffect } from 'react'
 import { fetchDoggiesData } from './redux/reducers/doggyReducer'
 import Preloader from './components/common/Preloader'
-import { MainContainer } from './components/Main/Main'
+import { MainContainer } from './components/MainContainer/MainContainer'
 
 const AppContainer = () => {
   const dispatch = useDispatch()
@@ -19,7 +19,8 @@ const AppContainer = () => {
   }, [dispatch])
 
   //display component only if data is loaded
-  if (isLoading) {
+  // if (isLoading) {
+  if (!dogData) {
     return <Preloader />
   }
   return <App dogData={dogData} dogBreed={dogBreed} />

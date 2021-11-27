@@ -1,3 +1,17 @@
 .container {
   background-color: rgb(206, 206, 206);
+  padding: 1rem;
+}
+
+.item {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  margin-bottom: 1.5em;
+  break-inside: avoid;
+}
+
+img {
+  width: 100%;
+  display: block;
+  border-radius: 15px;
 }

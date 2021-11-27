@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { fetchBreedImagesData } from './../../redux/reducers/doggyReducer'
+import { fetchBreedImagesData } from '../../redux/reducers/doggyReducer'
 import Preloader from './../common/Preloader'
 import { Main } from './Main/Main'
 
