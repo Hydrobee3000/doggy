@@ -13,14 +13,22 @@ img {
 
 .item {
   display: grid;
+  overflow: hidden;
   grid-template-rows: 1fr auto;
   margin-bottom: 1.5em;
   break-inside: avoid;
 }
 
 .image {
+  display: block;
   grid-row: 1 / -1;
   grid-column: 1;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.image:hover {
+  transform: scale(1.1);
 }
 
 @media (max-width: 1600px) {
