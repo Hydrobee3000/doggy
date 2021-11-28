@@ -1,6 +1,14 @@
 .container {
-  background-color: rgb(206, 206, 206);
+  column-count: 6;
+  column-gap: 1em;
+  background-color: rgb(255, 255, 255);
   padding: 1rem;
+}
+img {
+  width: 100%;
+  /* max-width: 100%; */
+  display: block;
+  border-radius: 15px;
 }
 
 .item {
@@ -10,8 +18,31 @@
   break-inside: avoid;
 }
 
-img {
-  width: 100%;
-  display: block;
-  border-radius: 15px;
+.image {
+  grid-row: 1 / -1;
+  grid-column: 1;
+}
+
+@media (max-width: 1600px) {
+  .container {
+    column-count: 5;
+  }
+}
+
+@media (max-width: 1300px) {
+  .container {
+    column-count: 4;
+  }
+}
+
+@media (max-width: 1000px) {
+  .container {
+    column-count: 3;
+  }
+}
+
+@media (max-width: 700px) {
+  .container {
+    column-count: 2;
+  }
 }

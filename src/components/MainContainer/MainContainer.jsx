@@ -11,17 +11,11 @@ export const MainContainer = () => {
   const breedImages = useSelector((state) => state.doggy.breedImages) //contains data about URL's of the selected breed
 
   useEffect(() => {
-    dispatch(fetchBreedImagesData(dogBreed)) //запрос изображений по выбранной породе
-    return () => {
-      dispatch(fetchBreedImagesData(null))
-    }
+    dispatch(fetchBreedImagesData(dogBreed)) //fetch images of the selected breed
+    return () => {}
   }, [dispatch, dogBreed])
 
-  //если изображений нет, показывать загрузку
-  // if (!breedImages) {
-  //   return <Preloader />
-  // }
-
+  //if there are no images in the state, show preloader
   if (!breedImages) {
     return <Preloader />
   }
