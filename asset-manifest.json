@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/doggy/static/css/main.6c1a17e8.chunk.css",
+    "main.js": "/doggy/static/js/main.68a181da.chunk.js",
+    "main.js.map": "/doggy/static/js/main.68a181da.chunk.js.map",
+    "runtime-main.js": "/doggy/static/js/runtime-main.509b753e.js",
+    "runtime-main.js.map": "/doggy/static/js/runtime-main.509b753e.js.map",
+    "static/js/2.90b1a246.chunk.js": "/doggy/static/js/2.90b1a246.chunk.js",
+    "static/js/2.90b1a246.chunk.js.map": "/doggy/static/js/2.90b1a246.chunk.js.map",
+    "static/js/3.605eda78.chunk.js": "/doggy/static/js/3.605eda78.chunk.js",
+    "static/js/3.605eda78.chunk.js.map": "/doggy/static/js/3.605eda78.chunk.js.map",
+    "index.html": "/doggy/index.html",
+    "static/css/main.6c1a17e8.chunk.css.map": "/doggy/static/css/main.6c1a17e8.chunk.css.map",
+    "static/js/2.90b1a246.chunk.js.LICENSE.txt": "/doggy/static/js/2.90b1a246.chunk.js.LICENSE.txt",
+    "static/media/preloader.a6f61220.svg": "/doggy/static/media/preloader.a6f61220.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.509b753e.js",
+    "static/js/2.90b1a246.chunk.js",
+    "static/css/main.6c1a17e8.chunk.css",
+    "static/js/main.68a181da.chunk.js"
+  ]
+}
