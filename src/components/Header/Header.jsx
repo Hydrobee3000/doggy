@@ -14,13 +14,29 @@ export const Header = ({ dogData, dogBreed }) => {
         }}
         placeholder='Choose breed'
         value={dogBreed}>
-        {Object.keys(dogData).map((item, i) => {
+        {/* mapped data of all breeds (key: value = breed: arrayOfSubBreed) */}
+        {Object.entries(dogData).map(function ([breed, arrayOfSubBread]) {
+          // if the sub-breed array is empty, then show only the breed
+          if (arrayOfSubBread.length === 0) {
+            return (
+              <option key={breed} value={breed}>
+                {breed}
+              </option>
+            )
+          }
+          //else mapped array of sub-breeds and display the name 'breed sub-breed' for each iteration
           return (
-            <option key={i} value={item}>
-              {item}
-            </option>
+            <>
+              {arrayOfSubBread.map((subBread) => {
+                return (
+                  <option key={subBread} value={breed + ' ' + subBread}>
+                    {breed + ' ' + subBread}
+                  </option>
+                )
+              })}
+            </>
           )
-        })}
+        }, dogData)}
       </select>
     </header>
   )
