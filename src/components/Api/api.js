@@ -14,4 +14,8 @@ export const dogAPI = {
   getBreedImages(breed) {
     return instance.get(`/breed/${breed}/images`)
   },
+  //get url of all images sub-breed of the selected
+  getSubBreedImages(breed, subBreed) {
+    return instance.get(`/breed/${breed}/${subBreed}/images`)
+  },
 }
