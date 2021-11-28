@@ -1,8 +1,8 @@
 import styles from './Header.module.css'
 import { useDispatch } from 'react-redux'
-import { setBreed } from './../../redux/reducers/doggyReducer'
+import { setBreed, setSubBreed } from './../../redux/reducers/doggyReducer'
 
-export const Header = ({ dogData, dogBreed }) => {
+export const Header = ({ dogData, dogBreed, dogSubBreed }) => {
   const dispatch = useDispatch()
 
   return (
@@ -10,10 +10,11 @@ export const Header = ({ dogData, dogBreed }) => {
       <select
         className={styles.select}
         onChange={(e) => {
-          dispatch(setBreed(e.target.value))
+          dispatch(setBreed(e.target.value.split(' ')[0])) //gave a breed of dog(first word)
+          dispatch(setSubBreed(e.target.value.split(' ')[1])) //gave a sub-breed of dog
         }}
         placeholder='Choose breed'
-        value={dogBreed}>
+        value={dogSubBreed ? dogBreed + ' ' + dogSubBreed : dogBreed}>
         {/* mapped data of all breeds (key: value = breed: arrayOfSubBreed) */}
         {Object.entries(dogData).map(function ([breed, arrayOfSubBread]) {
           // if the sub-breed array is empty, then show only the breed
