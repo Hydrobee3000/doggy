@@ -1,4 +1,5 @@
 import styles from './Main.module.css'
+import ScrollToTop from './../../common/ScrollToTop'
 
 export const Main = ({ dogBreed, breedImages }) => {
   return (
@@ -11,6 +12,7 @@ export const Main = ({ dogBreed, breedImages }) => {
           </div>
         )
       })}
+      <ScrollToTop />
     </main>
   )
 }
