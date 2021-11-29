@@ -15,6 +15,8 @@ export const Header = ({ dogData, dogBreed, dogSubBreed }) => {
         }}
         placeholder='Choose breed'
         value={dogSubBreed ? dogBreed + ' ' + dogSubBreed : dogBreed}>
+        {/* if there is a sub-breed, then value 'breed sub-breed', else only 'breed' */}
+
         {/* mapped data of all breeds (key: value = breed: arrayOfSubBreed) */}
         {Object.entries(dogData).map(function ([breed, arrayOfSubBread]) {
           // if the sub-breed array is empty, then show only the breed

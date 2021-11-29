@@ -1,7 +1,7 @@
 import styles from './Main.module.css'
 import ScrollToTop from './../../common/ScrollToTop'
 
-export const Main = ({ dogBreed, breedImages }) => {
+export const Main = ({ breedImages }) => {
   return (
     <main className={styles.container}>
       {/*iterates over each element in the array of URL's and draws the images*/}
