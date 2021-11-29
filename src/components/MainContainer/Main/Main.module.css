@@ -8,7 +8,6 @@ img {
   width: 100%;
   /* max-width: 100%; */
   display: block;
-  border-radius: 15px;
 }
 
 .item {
@@ -17,6 +16,7 @@ img {
   grid-template-rows: 1fr auto;
   margin-bottom: 1.5em;
   break-inside: avoid;
+  border-radius: 15px;
 }
 
 .image {
